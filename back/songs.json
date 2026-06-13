@@ -1,0 +1,17 @@
+[
+  {"title": "Sakura Reflection (P*Light Slayer Remix)", "level": 18.1, "bpm": 186, "patterns": ["노트", "복합"]},
+  {"title": "Innocent Azure", "level": 18.0, "bpm": 203, "patterns": ["노트", "낮은 난이도"]},
+  {"title": "初音ミクの消失", "level": 18.6, "bpm": 240, "patterns": ["폭타", "연타", "노트"]},
+  {"title": "For UltraPlayers", "level": 18.6, "bpm": 201, "patterns": ["폭타", "겹계단", "노브"]},
+  {"title": "Black night", "level": 18.0, "bpm": 226, "patterns": ["계단", "노트", "겹계단"]},
+  {"title": "NOT YOUR IDOL", "level": 18.5, "bpm": 155, "patterns": ["계단", "노트", "원핸드"]},
+  {"title": "Believe In Yourself", "level": 18.1, "bpm": 165, "patterns": ["원핸드", "노브", "개인차"]},
+  {"title": "ΑΩ", "level": 18.3, "bpm": 208, "patterns": ["원핸드", "노브"]},
+  {"title": "Divine's:Bugscript", "level": 18.8, "bpm": 230, "patterns": ["트릴", "원핸드"]},
+  {"title": "#Endroll", "level": 18.4, "bpm": 170, "patterns": ["핸드트립", "노브", "연타"]},
+  {"title": "WINNING ROAD", "level": 18.8, "bpm": 170, "patterns": ["연타", "계단", "노트"]},
+  {"title": "Opium and Purple haze", "level": 18.0, "bpm": 165, "patterns": ["노브", "핸드트립"]},
+  {"title": "最小三倍完全数", "level": 18.1, "bpm": 220, "patterns": ["노브", "연타", "트릴"]},
+  {"title": "Firestorm", "level": 18.5, "bpm": 177, "patterns": ["노브", "개인차", "계단"]},
+  {"title": "King of Tribe", "level": 18.4, "bpm": 200, "patterns": ["노브", "트릴"]}
+]

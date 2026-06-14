@@ -3,12 +3,12 @@ import requests
 
 st.set_page_config(page_title="SDVX Recommender", layout="wide")
 
-st.title("사운드볼텍스 18레벨 추천기")
+st.title("사운드볼텍스 18레벨 추천")
 st.markdown("### 학번: 2023204058 / 이름: 이재현")
 st.divider()
 
 # 사용자 입력
-st.subheader("선호하는 곡 조건 설정")
+st.subheader("곡 조건 설정")
 col1, col2 = st.columns(2)
 
 with col1:
@@ -16,14 +16,14 @@ with col1:
 
 with col2:
     pattern_list = ["노브", "원핸드", "계단", "폭타", "연타", "트릴"]
-    user_patterns = st.multiselect("선호 핵심 패턴 (1개 이상)", pattern_list, default=["노브"])
+    user_patterns = st.multiselect("선호 패턴", pattern_list, default=["노브"])
 
 st.write("") 
 
 # 추천 요청
-if st.button("곡 추천받기", use_container_width=True):
+if st.button("곡 추천", use_container_width=True):
     if not user_patterns:
-        st.warning("선호 패턴을 최소 1개 이상 선택해주세요.")
+        st.warning("선호 패턴을 최소 1개 이상 선택하세요.")
     else:
         req_data = {
             "min_lv": lv_range[0],
@@ -37,10 +37,10 @@ if st.button("곡 추천받기", use_container_width=True):
             
             # 결과
             st.divider()
-            st.subheader("결과 창")
+            st.subheader("결과")
             
             if data["status"] == "success":
-                st.success("조건에 맞는 추천 곡을 찾았습니다.")
+                st.success("조건에 맞는 곡입니다.")
                 
                 songs = data["recommendations"]
                 cols = st.columns(len(songs))
@@ -50,7 +50,7 @@ if st.button("곡 추천받기", use_container_width=True):
                         st.info(f"**{s['title']}**")
                         st.metric(label="Level", value=s["level"])
                         st.metric(label="BPM", value=s["bpm"])
-                        st.caption(f"특화 패턴: {', '.join(s['patterns'])}")
+                        st.caption(f"주 패턴: {', '.join(s['patterns'])}")
             else:
                 st.error(data["message"])
                 
